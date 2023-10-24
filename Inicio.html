@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PantallaPonderada </title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PantallaPonderada</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Young+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Young+Serif&display=swap" rel="stylesheet">
     
-    <style> .elemento { height: 100 px ;
-        width: 100 px ;
-       background-color: green;
-       margin-top: 40 px;
-    }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+
 </head>
-<body>
+
+
+<body class="body">
+
     <header>
-         <nav> 
-            <ul class="menu">
-                <li><a href="inicio.html"> Inicio </a></li>
-                <li> <a href= "peliculas.html"> Peliculas</a></li>
-                <li><a href= "Series.html">Series</a></li>
+        <nav class="navbar"> 
+            <div class="cine-logo">
+                <i class="fa-solid fa-film" style="color: #ffffff;"></i>
+            </div>
+            <ul class="menu"  id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
+                <li><a href="Series.html">Series</a></li>
                 <li><a href="acerca.html">Acerca de nosotros</a></li>
             </ul>
-
-         </nav>
+            <div class="menu-bar" id="menu-bar">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+        </nav>
     </header>
-    
-    <main> 
+
+    <main class="hero"> 
         
         <div class="contenedor">
             <h2>Bievenido a </h2>
@@ -43,14 +49,40 @@
         
 
         <div class="contenedor2">
-                <h2>En nuestra plataforma, sumérgete en el apasionante mundo del cine como nunca antes. Te ofrecemos críticas honestas y apasionadas de las últimas películas de todos los géneros. Desde emocionantes blockbusters hasta joyas del cine independiente, nuestro equipo de expertos cinéfilos está dedicado a proporcionarte análisis en profundidad y reseñas que te ayudarán a tomar decisiones informadas sobre qué películas ver a continuación. Nos esforzamos por desentrañar los misterios de la narrativa, destacar las actuaciones memorables y explorar los aspectos técnicos que hacen que cada película sea única. ¡Acompáñanos en este emocionante viaje a través de la séptima arte!</h2>
-                
+            <div><h2>En nuestra plataforma, sumérgete en el apasionante mundo del cine como nunca antes. Te ofrecemos críticas honestas y apasionadas de las últimas películas de todos los géneros. Desde emocionantes blockbusters hasta joyas del cine independiente, nuestro equipo de expertos cinéfilos está dedicado a proporcionarte análisis en profundidad y reseñas que te ayudarán a tomar decisiones informadas sobre qué películas ver a continuación. Nos esforzamos por desentrañar los misterios de la narrativa, destacar las actuaciones memorables y explorar los aspectos técnicos que hacen que cada película sea única. ¡Acompáñanos en este emocionante viaje a través de la séptima arte!</h2></div>
+            <div class="contenedor2-imagen">
+                <img src="imagenes\OIP.jpg" alt="cine1">
+                <img src="imagenes\channels4_profile.jpg" alt="cine2">
+                <img src="imagenes\OIP2.jpg" alt="cine3">
+            </div>
+    
         </div>
         
-</main>   
-    <footer> <h1> footer>
-        
-             </h1>
-    </footer> 
+    </main>   
+    
+    <script src="js/scripts.js"></script>
 </body>
+
+<footer class="footer"> 
+   <div class="inf-Pagina">
+    <ul class="list-foooter">
+        <li>PantallaPonderada</li>
+        <li>Sumérgete en el apasionante mundo del cine como nunca antes</li>
+        <li>© PantallaPonderada 2023. Todos los derechos reservados</li>
+    </ul>
+   </div>
+   <div class="inf-Pagina">
+    <ul class="redes-sociales"> Seguinos en nuestras redes sociales
+        <li><img src="imagenes\facebook.png" alt="facebook"><a href="https://es-la.facebook.com/">Facebook</a></li>
+        <li><img src="imagenes\instagram.png" alt="instagram"><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+        <li><img src="imagenes\twitter.png" alt="twitter"><a href="https://twitter.com/">Twitter</a></li>
+    </ul>
+   </div>
+   <div class="inf-Pagina">
+    <ul class="Formulario">
+        <li>¿Tienes alguna duda?</li>
+        <li><a href="acerca.html">Contactanos</a></li>
+    </ul>
+   </div>
+</footer> 
 </html>
