@@ -1,10 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
+    
 }
 
-/* Estilos de la barra de navegacion */
+/* Variables para todo el proyecto */
+
+:root{
+    --background-image: url('imagenes/salacineHD.jpg');
+    --content-width: 50em;
+    --text-color: rgb(255, 255, 255);
+    --font-family1: 'Gabarito', sans-serif;
+    --font-family2: 'Young Serif', serif;
+    --nav-background-color: #333;
+    --border-div: 0.3125em solid transparent;
+    --border_image_div: linear-gradient(to right, gray, red);
+    --border_slice_div: 1;
+
+}
 
 html, body{
     height:100%;
@@ -13,6 +27,8 @@ html, body{
     flex-direction: column; 
 }
 
+/* Estilos de la barra de navegacion */
+
 .navbar {
     font-family: 'Gabarito', sans-serif;
     background-color: #333; 
@@ -20,7 +36,6 @@ html, body{
     grid-template-columns: repeat(8, 1fr);
     align-items: center;
     font-weight: 100;
-    flex: 1;
 }
 
 .navbar .cine-logo {
@@ -54,11 +69,13 @@ html, body{
 
 .hero {
     flex: 1;
-    color: rgb(255, 255, 255);
-    background-image: url('imagenes/salacineHD.jpg');
+    color: var(--text-color);
+    background-image: var(--background-image);
     background-repeat: no-repeat;
     background-size: cover; 
-    font-family: 'Young Serif', serif;
+    font-family: var(--font-family2);
+    width: 1200;
+    height: 220;
     font-weight: 100;
     display: flex;
     justify-content: center;
@@ -70,11 +87,11 @@ html, body{
     background-image: url('imagenes/inicio_cinej.png');
     background-size: cover; 
     background-repeat: no-repeat; 
-    width: 800px; 
-    height: 220px;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1; 
+    width: var(--content-width); 
+    height: 13.75em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
     border-top: none;
     display: flex;
     flex-direction: column;
@@ -83,37 +100,39 @@ html, body{
 }
 
 .hero .contenedor h1, h2 {
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .hero .contenedor2 {
     background-color:  #333;
     background-size: cover; 
     background-repeat: no-repeat; 
-    width: 760px; 
-    height: 520px;
-    padding: 20px;
-    border-left: 5px solid transparent; 
-    border-right: 5px solid transparent;
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1; 
+    width: 47.5em; 
+    height: 32.5em;
+    padding: 1.25em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    border-top: none; 
+    border-bottom: none;
+    
     text-align: left; 
     font-family: 'Gabarito', sans-serif;
     color: aliceblue;
 }
 
 .contenedor2 .contenedor2-imagen{
-    margin-top: 30px;
+    margin-top: 1.875em;
     display: flex;
     justify-content: space-around;
 }
 
 .contenedor2-imagen img{
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1; 
-    width: 100px;
-    height: 100px;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    width: 6.25em;
+    height: 6.25em;
 }
 
 
@@ -155,7 +174,7 @@ html, body{
 
 .redes-sociales li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -177,7 +196,7 @@ html, body{
 
 .Formulario a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -191,11 +210,13 @@ html, body{
 /* Estilos de la seccion películas */
 
 .hero-peliculas {
-    color: rgb(255, 255, 255);
-    background-image: url('imagenes/salacineHD.jpg');
+    color: var(--text-color);
+    background-image: var(--background-image);
     background-repeat: no-repeat;
     background-size: cover; 
-    font-family: 'Young Serif', serif;
+    font-family: var(--font-family2);
+    width: 1200;
+    height: 220;
     font-weight: 100;
     display: flex;
     justify-content: center;
@@ -207,11 +228,11 @@ html, body{
     background-image: url('imagenes/inicio_cinej.png');
     background-size: cover; 
     background-repeat: no-repeat; 
-    width: 800px; 
-    height: 220px;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1;
+    width: var(--content-width);
+    height: 13.75em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
     display: flex;
     flex-direction: column;
     text-align: left; 
@@ -219,7 +240,7 @@ html, body{
 }
 
 .hero-peliculas .peliculas-p h1 {
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 
@@ -227,64 +248,64 @@ html, body{
     background-image: url('imagenes/tendencia.png');
     background-size: cover; 
     background-repeat: no-repeat; 
-    width: 800px; 
-    height: 150px;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1;
+    width: var(--content-width);
+    height: 9.375em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 10px; 
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 0.625em; 
+    margin-top: 1.25em;
+    margin-bottom: 0.625em;
 }
 
 .hero-peliculas .estrenos {
     background-image: url('imagenes/estrenos.png');
      background-size: cover; 
     background-repeat: no-repeat; 
-    width: 800px; 
+    width: var(--content-width);
     height: 150px;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
     display: flex;
     flex-direction: column;
     text-align: left; 
     align-items: flex-start;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0.625emx;
+    margin-top: 0.625emx;
+    margin-bottom: 0.625emx;
 }
 
 .hero-peliculas .genero {
     background-image: url('imagenes/genero.png');
     background-size: cover; 
     background-repeat: no-repeat; 
-    width: 800px; 
+    width: var(--content-width); 
     height: 150px;
-    border: 5px solid transparent; 
-    border-image: linear-gradient(to right, gray, red);
-    border-image-slice: 1;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
     display: flex;
     flex-direction: column;
     text-align: left; 
     align-items: flex-start;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0.625em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
 }
 
 /* Estilos de la seccion series */
 
 .hero-series {
-    color: rgb(255, 255, 255);
-    background-image: url('imagenes/salacineHD.jpg');
-    font-family: 'Young Serif', serif;
-    font-weight: 100;
+    color: var(--text-color);
+    background-image: var(--background-image);
+    font-family: var(--font-family2);
     width: 1200;
     height: 220;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     flex-direction: column; /* Alinea los elementos en una columna vertical */
@@ -294,12 +315,10 @@ html, body{
 /* Estilos de la seccion acerca */
 
 .hero-acerca {
-    color: rgb(255, 255, 255);
-    background-image: url('imagenes/salacineHD.jpg');
-    font-family: 'Young Serif', serif;
+    color: var(--text-color);
+    background-image: var(--background-image);
+    font-family: var(--font-family2);
     font-weight: 100;
-    width: 1200;
-    height: 220;
     display: flex;
     justify-content: center;
     flex-direction: column; /* Alinea los elementos en una columna vertical */
@@ -323,8 +342,8 @@ html, body{
 .tendencias-text {
     
     text-align: start;
-    padding: 10px; 
-    font-family: 'Gabarito', sans-serif;
+    padding: 0.625em; 
+    font-family: var(--font-family1);
     color: aliceblue;
 }
 .text-overlay {
@@ -332,12 +351,12 @@ html, body{
     top: -510px;
     left: 175px;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 0.625em;
 }
 
 .text-overlay h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .text-overlay h1 {

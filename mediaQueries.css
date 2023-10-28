@@ -23,16 +23,55 @@
         margin-top: 22em;
         transform: translateX(180%);
         transition: all 0.5s;
+        z-index: 1;
     }
 
     .navbar .menu-toggle {
         transform: translateX(75%);
+        z-index: 1;
     }
+
+    .hero{
+        font-size: 66%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero .container2{
+        font-size: 40%;
+    }
+
+    .contenedor2 .contenedor2-imagen{
+        display: none;
+    }
+
+    .hero .footer{
+    font-size: 90%;
+    }
+
+    .hero-peliculas{
+        font-size: 66%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer, ul{
+        font-size: 80%;
+    }
+
+    .footer li{
+        margin: 10px
+    }
+
+
 }
 
 @media only screen and (max-width: 768px) {
     
     .navbar {
+       
         position: relative;
     }
     
@@ -60,4 +99,48 @@
     .navbar .menu-toggle {
         transform: translateX(75%);
     }
-}
+
+    .hero{
+        font-size: 66%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero, .container2{
+        font-size: 40%;
+    }
+
+    .hero-peliculas{
+        font-size: 66%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;}
+
+
+    .hero, .footer{
+    font-size: 90%;
+    }
+
+
+    .footer, ul{
+        font-size: 100%;
+    }
+
+    
+    }
+
+    @media only screen and (max-width: 1400px){
+
+        .hero-peliculas{
+            font-size: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;}
+
+
+
+        .footer {
+            font-size: 1.2em;
+        }
+    }

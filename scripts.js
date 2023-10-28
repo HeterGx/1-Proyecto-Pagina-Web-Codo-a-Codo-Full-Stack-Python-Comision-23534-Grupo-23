@@ -7,6 +7,6 @@ let menu_bar = document.querySelector('#menu-bar');
 
         menu.classList.toggle('menu-toggle');
 
-    })
+    });
 
     
