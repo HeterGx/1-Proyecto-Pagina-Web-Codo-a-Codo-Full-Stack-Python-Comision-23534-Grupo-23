@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+/* Variables para todo el proyecto */
+
+:root{
+    --background-image: url('imagenes/salacineHD.jpg');
+    --content-width: 50em;
+    --text-color: rgb(255, 255, 255);
+    --font-family1: 'Gabarito', sans-serif;
+    --font-family2: 'Young Serif', serif;
+    --nav-background-color: #333;
+    --border-div: 0.3125em solid transparent;
+    --border_image_div: linear-gradient(to right, gray, red);
+    --border_slice_div: 1;
+
+}
+
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Estilos de la barra de navegacion */
+
+.navbar {
+    font-family: 'Gabarito', sans-serif;
+    background-color: #333; 
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    font-weight: 100;
+}
+
+.navbar .cine-logo {
+    font-size: 2em;
+    grid-column: 2/3;
+}
+
+.navbar .menu {
+    font-size: 20px;
+    grid-column: 3/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+/* Estilos de la seccion principal */
+
+
+.hero {
+    flex: 1;
+    color: var(--text-color);
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: var(--font-family2);
+    width: 1200;
+    height: 220;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en una columna vertical */
+    align-items: center;
+}
+
+.hero .contenedor {
+    background-image: url('imagenes/inicio_cinej.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: var(--content-width); 
+    height: 13.75em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    justify-content: center;
+}
+
+.hero .contenedor h1, h2 {
+    margin-left: 1.25em;
+}
+
+.hero .contenedor2 {
+    background-color:  #333;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: 47.5em; 
+    height: 32.5em;
+    padding: 1.25em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    border-top: none; 
+    border-bottom: none;
+    
+    text-align: left; 
+    font-family: 'Gabarito', sans-serif;
+    color: aliceblue;
+}
+
+.contenedor2 .contenedor2-imagen{
+    margin-top: 1.875em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor2-imagen img{
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    width: 6.25em;
+    height: 6.25em;
+}
+
+
+
+.footer {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Young Serif', serif;
+    font-size: 2em;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footer .inf-Pagina {
+    font-size: 0.7em;
+}
+
+.footer .inf-Pagina .list-foooter{
+    list-style: none;
+    line-height: 200%;
+    
+}
+
+.list-foooter li:last-child{
+    font-style: italic;
+    font-size: 0.5em;
+    
+}
+
+.redes-sociales {
+    list-style: none;
+    font-size: 0.7em;
+    line-height: 200%;
+}
+
+.redes-sociales li a{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.redes-sociales li img{
+    height: 1em;
+    width: 1em;
+    
+}
+
+.Formulario{
+    list-style: none;
+    font-size: 0.7em;
+    line-height: 300%;
+}
+
+.Formulario li:last-child{
+    font-weight: bold;
+}
+
+.Formulario a{
+    text-decoration: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+
+    
+
+
+
+
+/* Estilos de la seccion películas */
+
+.hero-peliculas {
+    color: var(--text-color);
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: var(--font-family2);
+    width: 1200;
+    height: 220;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en una columna vertical */
+    align-items: center;
+}
+
+.hero-peliculas .peliculas-p {
+    background-image: url('imagenes/inicio_cinej.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: var(--content-width);
+    height: 13.75em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    justify-content: center;
+}
+
+.hero-peliculas .peliculas-p h1 {
+    margin-left: 1.25em;
+}
+
+
+.hero-peliculas .tendencias {
+    background-image: url('imagenes/tendencia.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: var(--content-width);
+    height: 9.375em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.625em; 
+    margin-top: 1.25em;
+    margin-bottom: 0.625em;
+}
+
+.hero-peliculas .estrenos {
+    background-image: url('imagenes/estrenos.png');
+     background-size: cover; 
+    background-repeat: no-repeat; 
+    width: var(--content-width);
+    height: 150px;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    align-items: flex-start;
+    padding: 0.625emx;
+    margin-top: 0.625emx;
+    margin-bottom: 0.625emx;
+}
+
+.hero-peliculas .genero {
+    background-image: url('imagenes/genero.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: var(--content-width); 
+    height: 150px;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    align-items: flex-start;
+    padding: 0.625em;
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+}
+
+/* Estilos de la seccion series */
+
+.hero-series {
+    color: var(--text-color);
+    background-image: var(--background-image);
+    font-family: var(--font-family2);
+    width: 1200;
+    height: 220;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en una columna vertical */
+    align-items: center;
+}
+
+/* Estilos de la seccion acerca */
+
+.hero-acerca {
+    color: var(--text-color);
+    background-image: var(--background-image);
+    font-family: var(--font-family2);
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en una columna vertical */
+    align-items: center;
+}
+
+
+
+
+
+/* Estilos generales */
+
+.image-container {
+    position: relative;
+    text-align: center;
+    background-color: aquamarine;
+    
+}
+
+
+.tendencias-text {
+    
+    text-align: start;
+    padding: 0.625em; 
+    font-family: var(--font-family1);
+    color: aliceblue;
+}
+.text-overlay {
+    position: relative;
+    top: -510px;
+    left: 175px;
+    transform: translate(-50%, -50%);
+    padding: 0.625em;
+}
+
+.text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 0.625em;
+}
+
+.text-overlay h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
