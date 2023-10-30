@@ -38,9 +38,29 @@
     </header>
 
     
-    <main class="hero-series">
-        <seccion id="series">
-            <h1>Encuentra tu pelicula favorita</h1>
+    <main id="hero-buscar">
+        <seccion id="app">
+            <h1 class="h1pkm">Encuentra tu pokemon favorito</h1>
+            <div class="pkm-stats">
+               
+            <input v-model="numero" placeholder="Número de Pokémon" />
+    <button @click="buscarPokemon">Buscar</button>
+   
+    <h2>Detalles del Pokémon</h2>
+    <div v-if="pokemon">
+      <h3>{{ pokemon.name }}</h3>
+      <div id="img-pokemon">
+      <img :src="pokemon.sprites.front_default" alt="Imagen del Pokémon" />
+    </div>
+      <p>Tipo: {{ tipos }}</p>
+      <p>Altura: {{ pokemon.height / 10 }} m</p>
+      <p>Peso: {{ pokemon.weight / 10 }} kg</p>
+    </div>
+  </div>
+</div>
+
+
+
         </seccion>
     </main>
 
@@ -66,7 +86,9 @@
          </ul>
         </div>
      </footer> 
-     
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.11/dist/vue.global.prod.js"></script>
+    <script src="vue.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
