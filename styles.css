@@ -23,7 +23,7 @@
 
 }
 
-html, body{
+html, .body{
     height:100%;
     margin:0;
     display: flex;
@@ -302,18 +302,45 @@ html, body{
 
 /* Estilos de la seccion series */
 
-.hero-series {
+#hero-buscar {
+    background-size: cover; 
+    background-repeat: no-repeat; 
     color: var(--text-color);
     background-image: var(--background-image);
     font-family: var(--font-family2);
     width: 1200;
-    height: 220;
+    height: 46.25em;
     font-weight: 100;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; /* Alinea los elementos en una columna vertical */
-    align-items: center;
+    
 }
+
+.h1pkm{
+    text-align: center;
+}
+
+.pkm-stats{
+    margin-top: 8em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: var(--border-div); 
+   border-image: var(--border_image_div);
+   border-image-slice: var(--border_slice_div);
+   border-left: none;
+   border-right: none;
+   
+}
+
+#img-pokemon{
+    width: 6em;
+    height: 6em;
+    border: var(--border-div); 
+    border-image: var(--border_image_div);
+    border-image-slice: var(--border_slice_div); 
+}
+
+
 
 /* Estilos de la seccion acerca */
 
